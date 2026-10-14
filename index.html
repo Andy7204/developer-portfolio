@@ -2,299 +2,281 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
+    <title>Anand Panajkar | Developer &amp; ML Engineer</title>
+    <meta
+      name="description"
+      content="Anand Panajkar builds developer tools, ML models, data apps and games: Unused & Looking, Dhruva, Skyrealm and more."
     />
+
+    <!-- Social preview (LinkedIn, X, Slack use these when you share the link) -->
+    <meta property="og:title" content="Anand Panajkar | Developer & ML Engineer" />
+    <meta
+      property="og:description"
+      content="Developer tools, ML models and data apps, all open source."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/unused-and-looking.png" />
+
+    <!-- Favicon: an inline SVG, so there is no image file to maintain -->
     <link
       rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' fill='white' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E"
     />
 
-    <!-- Animate CSS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Jane Doe | Web Developer</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav>
-      <h1>JANE DOE</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
-    </nav>
-    
-    <p> 0024 </p>
+    <header class="nav">
+      <a href="#top" class="logo">Anand<span>.</span></a>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+        <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-        src="assets/images/wfh_1.svg"
-        alt="jane-doe"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-          inventore tempore minus nemo, iste ullam illo laboriosam maiores
-          repudiandae quos!
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <p class="eyebrow">Hi, I'm Anand Panajkar 👋</p>
+        <h1>I build developer tools, data apps and games that people can actually use.</h1>
+        <p class="lead">
+          Computer engineering at COEP Technological University. I like taking an idea from a
+          notebook to something live: a CLI on npm, a dashboard that updates itself every trading
+          day, a game you can play in your browser.
         </p>
-      </div>
-    </section>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="https://github.com/Andy7204" target="_blank" rel="noopener" class="btn">GitHub</a>
+          <!-- TODO: put your LinkedIn profile URL here; the button hides itself while it's "#" -->
+          <a href="#" target="_blank" rel="noopener" class="btn" data-hide-if-empty>LinkedIn</a>
+        </div>
+        <ul class="stats">
+          <li><strong>12</strong> public repos</li>
+          <li><strong>3</strong> live apps</li>
+          <li><strong>4</strong> languages analysed by my CLI</li>
+        </ul>
+      </section>
 
-    <!-- More about -->
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
-      </p>
-    </section>
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <h2>Featured projects</h2>
+        <p class="section-sub">Click a filter to narrow the list.</p>
 
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="tools">Dev tools</button>
+          <button class="chip" data-filter="ml">ML / AI</button>
+          <button class="chip" data-filter="data">Data apps</button>
+          <button class="chip" data-filter="web">Web</button>
         </div>
 
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-react-native.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/expenseTracker.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Expense Tracker</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/netflixClone.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyylnggw" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
+        <div class="projects">
+          <!-- 1. Unused & Looking -->
+          <article class="card featured" data-tags="tools web">
+            <img
+              src="assets/images/unused-and-looking.png"
+              alt="Unused & Looking: a swipeable dating profile for an unused function"
+              class="card-img"
+              loading="lazy"
             />
-          </form>
+            <div class="card-body">
+              <p class="card-kicker">Dev tool · npm CLI + web app</p>
+              <h3>Unused &amp; Looking 💔</h3>
+              <p>
+                Finds functions nobody calls in JS/TS, Python, Go and Ruby, then gives each one a
+                dating profile you can swipe. Swipe left to add it to a cleanup list, right to see
+                duplicated logic elsewhere. Zero dependencies; the same analyser runs in Node and in
+                the browser.
+              </p>
+              <ul class="tags">
+                <li>JavaScript</li><li>Static analysis</li><li>CLI</li><li>GitHub Pages</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://andy7204.github.io/unused-and-looking/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live demo</a>
+                <a href="https://github.com/Andy7204/unused-and-looking" target="_blank" rel="noopener" class="btn btn-sm">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Dhruva -->
+          <article class="card" data-tags="data ml">
+            <div class="card-art art-dhruva" aria-hidden="true">📈</div>
+            <div class="card-body">
+              <p class="card-kicker">Data app · automated research</p>
+              <h3>Dhruva</h3>
+              <p>
+                A public, paper-only forward test of three index strategies against holding Nifty 50.
+                GitHub Actions fetches official NSE data every trading day, replays each book and
+                commits the results; a watchdog opens an issue if data goes stale.
+              </p>
+              <ul class="tags">
+                <li>Python</li><li>Streamlit</li><li>GitHub Actions</li><li>Backtesting</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://dhruva-andy7204.streamlit.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live app</a>
+                <a href="https://github.com/Andy7204/dhruva" target="_blank" rel="noopener" class="btn btn-sm">Code</a>
+              </div>
+            </div>
+          </article>
+
+
+
+          <!-- Skyrealm -->
+          <article class="card" data-tags="web">
+            <div class="card-art art-sky" aria-hidden="true">☁️</div>
+            <div class="card-body">
+              <p class="card-kicker">Game · browser &amp; YouTube Playables</p>
+              <h3>Skyrealm</h3>
+              <p>
+                A cozy idle kingdom-builder on a floating island: tap for gold, grow through six eras,
+                gamble on dragons and sky pirates, defend against raids. One HTML file, hand-drawn on
+                Canvas, with synthesized sound and no dependencies.
+              </p>
+              <ul class="tags">
+                <li>JavaScript</li><li>Canvas 2D</li><li>Web Audio</li><li>Game design</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://andy7204.github.io/skyrealm/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Play</a>
+                <a href="https://github.com/Andy7204/skyrealm" target="_blank" rel="noopener" class="btn btn-sm">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Cancer cell classifier -->
+          <article class="card" data-tags="ml data">
+            <div class="card-art art-cell" aria-hidden="true">🧬</div>
+            <div class="card-body">
+              <p class="card-kicker">ML app · internship (Celebal Technologies)</p>
+              <h3>Cancer Cell Classifier</h3>
+              <p>
+                A Streamlit app over a scikit-learn model that predicts whether a cell is cancerous
+                and shows its confidence. Part of a set of data-science assignments including house
+                prices, customer segmentation and Netflix EDA.
+              </p>
+              <ul class="tags">
+                <li>scikit-learn</li><li>Streamlit</li><li>SHAP</li>
+              </ul>
+              <div class="card-links">
+                <!-- TODO: replace with the Streamlit URL once deployed -->
+                <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-hide-if-empty>Live app</a>
+                <a href="https://github.com/Andy7204/CelebalTechAssignments" target="_blank" rel="noopener" class="btn btn-sm">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. ML collection -->
+          <article class="card" data-tags="ml">
+            <div class="card-art art-ml" aria-hidden="true">🤖</div>
+            <div class="card-body">
+              <p class="card-kicker">Notebooks · classic ML &amp; deep learning</p>
+              <h3>Machine Learning Projects</h3>
+              <p>
+                EMG signal classification (classical ML vs deep learning), LSTM stock forecasting,
+                NLP to spot real disaster tweets, and Titanic survival with logistic regression.
+              </p>
+              <ul class="tags">
+                <li>Pandas</li><li>Keras</li><li>NLP</li><li>LSTM</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://github.com/Andy7204/Machine_Learning_Projects" target="_blank" rel="noopener" class="btn btn-sm">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Web -->
+          <article class="card" data-tags="web">
+            <div class="card-art art-web" aria-hidden="true">🌐</div>
+            <div class="card-body">
+              <p class="card-kicker">Web · Harvard CS50W &amp; Django</p>
+              <h3>CS50W &amp; Django apps</h3>
+              <p>
+                Coursework from Harvard's CS50 Web Programming, plus small Django apps (tasks, "is it
+                New Year?", hello) built while learning views, templates and sessions.
+              </p>
+              <ul class="tags">
+                <li>Django</li><li>HTML/CSS</li><li>Python</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://github.com/Andy7204/CS50W-Projects" target="_blank" rel="noopener" class="btn btn-sm">CS50W</a>
+                <a href="https://github.com/Andy7204/DjangoApp" target="_blank" rel="noopener" class="btn btn-sm">Django</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-twitter-circled.gif"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
-    </div>
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul class="tags"><li>Python</li><li>JavaScript</li><li>SQL</li><li>HTML/CSS</li><li>Canvas/Web Audio</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>ML &amp; AI</h3>
+            <ul class="tags"><li>scikit-learn</li><li>TensorFlow/Keras</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data</h3>
+            <ul class="tags"><li>Pandas</li><li>NumPy</li><li>Matplotlib/Seaborn</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Shipping</h3>
+            <ul class="tags"><li>Git/GitHub</li><li>GitHub Actions</li><li>Streamlit</li><li>Docker</li><li>Django</li><li>npm</li></ul>
+          </div>
+        </div>
+      </section>
 
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/icons/icons8-upward-arrow.gif"
-        class="socicon up-arrow"
-        alt=""
-    /></i>
+      <!-- About -->
+      <section class="section about" id="about">
+        <h2>About me</h2>
+        <p>
+          I started with HTML and CSS, went through Harvard's CS50W, and then fell into machine
+          learning: signal classification, NLP, time-series forecasting. These days I
+          care most about the last mile, turning a model or a script into something with a URL,
+          tests and automation, so other people can use it without asking me how.
+        </p>
+        <p>
+          I'm looking for roles and collaborations in software engineering, ML engineering and data.
+          <!-- TODO: edit this line to say exactly what you're looking for (internship, full-time, location) -->
+        </p>
+      </section>
 
-    <!-- Footer section -->
-    <footer>
-      <p class="copy">&copy; Copyright 2021</p>
-      <p class="copy">
-        Built with &#x2661; by
-        <a href="https://twitter.com/koladechris" target="_blank"
-          >Kolade Chris (Ksound)</a
-        >
-      </p>
+      <!-- Contact -->
+      <section class="section contact" id="contact">
+        <h2>Let's talk</h2>
+        <p>The fastest way to reach me is a message on LinkedIn or an issue on any of my repos.</p>
+        <div class="hero-cta">
+          <!-- TODO: put your LinkedIn profile URL here -->
+          <a href="#" target="_blank" rel="noopener" class="btn btn-primary" data-hide-if-empty>Message me on LinkedIn</a>
+          <a href="https://github.com/Andy7204" target="_blank" rel="noopener" class="btn">Follow on GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Anand Panajkar · Built with plain HTML, CSS and JavaScript</p>
+      <button class="icon-btn" id="scroll-up" aria-label="Back to top">↑</button>
     </footer>
 
-    <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
