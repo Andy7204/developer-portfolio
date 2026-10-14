@@ -6,7 +6,7 @@
     <title>Anand Panajkar | Developer &amp; ML Engineer</title>
     <meta
       name="description"
-      content="Anand Panajkar builds developer tools, ML models and data apps: Unused & Looking, Dhruva, a RAG chatbot and more."
+      content="Anand Panajkar builds developer tools, ML models, data apps and games: Unused & Looking, Dhruva, Skyrealm and more."
     />
 
     <!-- Social preview (LinkedIn, X, Slack use these when you share the link) -->
@@ -55,11 +55,11 @@
       <!-- Hero -->
       <section class="hero">
         <p class="eyebrow">Hi, I'm Anand Panajkar 👋</p>
-        <h1>I build developer tools, ML models and data apps that people can actually use.</h1>
+        <h1>I build developer tools, data apps and games that people can actually use.</h1>
         <p class="lead">
           Computer engineering at COEP Technological University. I like taking an idea from a
           notebook to something live: a CLI on npm, a dashboard that updates itself every trading
-          day, a chatbot that answers from your own documents.
+          day, a game you can play in your browser.
         </p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-primary">See my work</a>
@@ -69,7 +69,7 @@
         </div>
         <ul class="stats">
           <li><strong>12</strong> public repos</li>
-          <li><strong>2</strong> live apps</li>
+          <li><strong>3</strong> live apps</li>
           <li><strong>4</strong> languages analysed by my CLI</li>
         </ul>
       </section>
@@ -136,43 +136,25 @@
             </div>
           </article>
 
-          <!-- 3. RAG chatbot -->
-          <article class="card" data-tags="ml">
-            <div class="card-art art-rag" aria-hidden="true">🧠</div>
-            <div class="card-body">
-              <p class="card-kicker">AI · retrieval-augmented generation</p>
-              <h3>RAG Q&amp;A Chatbot</h3>
-              <p>
-                Ask questions about your own documents. Text is embedded with MiniLM, stored in
-                ChromaDB, and the closest passages are handed to FLAN-T5 to write a grounded answer.
-              </p>
-              <ul class="tags">
-                <li>Python</li><li>ChromaDB</li><li>Transformers</li><li>Streamlit</li>
-              </ul>
-              <div class="card-links">
-                <!-- TODO: replace with the Streamlit/Hugging Face URL once deployed -->
-                <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-hide-if-empty>Live app</a>
-                <a href="https://github.com/Andy7204/RAG_QnA_Chatbot" target="_blank" rel="noopener" class="btn btn-sm">Code</a>
-              </div>
-            </div>
-          </article>
 
-          <!-- 4. FER -->
-          <article class="card" data-tags="ml">
-            <div class="card-art art-fer" aria-hidden="true">😊</div>
+
+          <!-- Skyrealm -->
+          <article class="card" data-tags="web">
+            <div class="card-art art-sky" aria-hidden="true">☁️</div>
             <div class="card-body">
-              <p class="card-kicker">Computer vision · transfer learning</p>
-              <h3>Facial Emotion Recognition</h3>
+              <p class="card-kicker">Game · browser &amp; YouTube Playables</p>
+              <h3>Skyrealm</h3>
               <p>
-                Detects six emotions from faces using VGG19 and ResNet50 pretrained on ImageNet,
-                fine-tuned on a class-balanced FER2013. Haar cascades find faces; the model returns a
-                label with a confidence score.
+                A cozy idle kingdom-builder on a floating island: tap for gold, grow through six eras,
+                gamble on dragons and sky pirates, defend against raids. One HTML file, hand-drawn on
+                Canvas, with synthesized sound and no dependencies.
               </p>
               <ul class="tags">
-                <li>TensorFlow</li><li>OpenCV</li><li>CNNs</li>
+                <li>JavaScript</li><li>Canvas 2D</li><li>Web Audio</li><li>Game design</li>
               </ul>
               <div class="card-links">
-                <a href="https://github.com/Andy7204/FER_with_TrfLrn" target="_blank" rel="noopener" class="btn btn-sm">Code</a>
+                <a href="https://andy7204.github.io/skyrealm/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Play</a>
+                <a href="https://github.com/Andy7204/skyrealm" target="_blank" rel="noopener" class="btn btn-sm">Code</a>
               </div>
             </div>
           </article>
@@ -246,15 +228,15 @@
         <div class="skills">
           <div class="skill-group">
             <h3>Languages</h3>
-            <ul class="tags"><li>Python</li><li>JavaScript</li><li>SQL</li><li>HTML/CSS</li></ul>
+            <ul class="tags"><li>Python</li><li>JavaScript</li><li>SQL</li><li>HTML/CSS</li><li>Canvas/Web Audio</li></ul>
           </div>
           <div class="skill-group">
             <h3>ML &amp; AI</h3>
-            <ul class="tags"><li>scikit-learn</li><li>TensorFlow/Keras</li><li>Transformers</li><li>RAG</li><li>OpenCV</li></ul>
+            <ul class="tags"><li>scikit-learn</li><li>TensorFlow/Keras</li></ul>
           </div>
           <div class="skill-group">
             <h3>Data</h3>
-            <ul class="tags"><li>Pandas</li><li>NumPy</li><li>Matplotlib/Seaborn</li><li>ChromaDB</li></ul>
+            <ul class="tags"><li>Pandas</li><li>NumPy</li><li>Matplotlib/Seaborn</li></ul>
           </div>
           <div class="skill-group">
             <h3>Shipping</h3>
@@ -268,7 +250,7 @@
         <h2>About me</h2>
         <p>
           I started with HTML and CSS, went through Harvard's CS50W, and then fell into machine
-          learning: signal classification, NLP, computer vision with transfer learning. These days I
+          learning: signal classification, NLP, time-series forecasting. These days I
           care most about the last mile, turning a model or a script into something with a URL,
           tests and automation, so other people can use it without asking me how.
         </p>
